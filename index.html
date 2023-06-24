@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Movie/Series Preferences Survey Form</h1>
+      <p>Thank you for taking the time to help us improve the platform</p>
+    </header>
+
+    <main id="main">
+      <form id="survey-form">
+        <div id="survey">
+          <label id="name-label">Name</label>
+          <input
+            class="form-control"
+            id="name"
+            type="text"
+            placeholder="Enter your name"
+            required
+          />
+
+          <label id="email-label">Email</label>
+          <input
+            class="form-control"
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Enter your emial"
+            required
+          />
+
+          <label id="age-label">Age (optional)</label>
+          <input
+            class="form-control"
+            id="number"
+            type="number"
+            name="number"
+            placeholder="Age"
+            min="15"
+            max="80"
+            required
+          />
+
+          <div class="form-group">
+            <label>What genre of movie do you prefere?</label>
+            <select id="dropdown" name="row" class="form-control">
+              <option disabled selected value>
+                select your prefered Movie
+              </option>
+              <option value="Action">Action</option>
+              <option value="Comedy">Comedy</option>
+              <option value="Drama">Drama</option>
+              <option value="Sci-Fi">Sci-Fi</option>
+              <option value="Horror">Horror</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Where would you watch movie?</label>
+            <label
+              ><input
+                type="radio"
+                name="food"
+                value="food-pizza"
+                class="input-radio"
+                checked
+              />Cinema</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="food"
+                value="food-chinese"
+                class="input-radio"
+                checked
+              />Television</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="food"
+                value="food-chinese"
+                class="input-radio"
+                checked
+              />Gadget</label
+            >
+          </div>
+
+          <div class="form-group">
+            <label>Who do you watch movies with?</label>
+            <label
+              ><input
+                type="checkbox"
+                name="food"
+                value="food-pizza"
+                class="input-checkbox"
+              />Friends</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="food"
+                value="food-chinese"
+                class="input-checkbox"
+              />Family</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="food"
+                value="food-chinese"
+                class="input-checkbox"
+              />Yourself</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="food"
+                value="food-chinese"
+                class="input-checkbox"
+              />All the above</label
+            >
+          </div>
+
+          <div>
+            <label id="name-label">Whats your favourite movie?</label>
+            <input
+              class="form-control"
+              id="name"
+              type="text"
+              placeholder="Enter your your favourite movie"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label> A comments or suggestions?</label>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="submit-button" id="submit">
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
